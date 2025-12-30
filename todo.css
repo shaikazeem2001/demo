@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.todo {
+    width: 360px;
+    background: #121212;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.todo input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.todo button#task-btn {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.todo button#task-btn:hover {
+    background: darkred;
+}
+
+.tasks {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.tasks li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #1e1e1e;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.tasks li span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.tasks li button {
+    background: #ff4d4d;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.tasks li button:hover {
+    background: #ff1a1a;
+}
+
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
